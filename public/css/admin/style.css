@@ -1,0 +1,262 @@
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+/*Body Scrollbar*/
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(105, 0, 199)),
+                                       color-stop(0.86, rgb(78, 115, 223)));
+}
+
+.kalender .header {
+  padding: 15px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.kalender .header i {
+  padding: 0 5px;
+  cursor: pointer;
+}
+.kalender .header span {
+  display: inline-block;
+  margin: 0 3px;
+  font-weight: 700;
+}
+.kalender .right-wrapper {
+  background-color: #4e73df;
+  color: white;
+  transform-origin: left center;
+  transform: rotateY(110deg);
+  transition: all 0.5s;
+}
+.kalender .right-wrapper.is-active {
+  transform: rotateY(0deg);
+}
+.kalender .right-wrapper .header {
+  text-align: left;
+  justify-content: center;
+}
+.kalender .right-wrapper .day {
+  font-size: 12em;
+  text-indent: -12px;
+  display: block;
+}
+.kalender .right-wrapper .month {
+  font-size: 2.5em;
+}
+.kalender .sideb .showDate {
+  color: white;
+  text-align: right;
+  width: 100%;
+}
+.kalender .sideb .showDate i {
+  cursor: pointer;
+  background: #4e73df;
+  border-radius: 4px;
+  padding: 8px 12px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.kalender .sideb .showDate i.is-active {
+  transform: scale(-1);
+}
+.kalender .sideb table {
+  text-align: center;
+
+  width: 90%;
+  margin: 30px auto 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.kalender .sideb table tbody:before {
+  content: "-";
+  display: block;
+  line-height: 0.75em;
+  color: transparent;
+}
+.kalender .sideb table th {
+  color: #4e73df;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.kalender .sideb table td {
+  padding: 11px 5px;
+  color: #ced0ce;
+  font-size: 0.75em;
+  transition: all 0.3s;
+  position: relative;
+}
+.kalender .sideb table td::before {
+  content: "";
+  display: none;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -8px);
+  background-color: #fff;
+}
+.kalender .sideb table td.currentDay::before {
+  display: block;
+}
+.kalender .sideb table td.selectable {
+  color: #4e73df;
+  cursor: pointer;
+}
+.kalender .sideb table td.selectable:hover {
+  background: #4e73df;
+  color: white;
+}
+.kalender .sideb table td.between {
+  background-color: #333;
+  color: white;
+}
+.kalender .sideb table td.active, .kalender .sideb table td.hover {
+  background: #4e73df;
+  color: white;
+}
+
+/*Year Picker*/
+.years-picker{
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
+.years-picker[readonly]{
+  background-color: #ffffff;
+}
+
+.years-picker:focus{
+  outline: none !important;
+}
+
+/*Show Hide Password*/
+.eye{
+  background-color:#efefef; 
+  padding-top: 11px; 
+  padding-bottom: 11px; 
+  padding-right: 15px;
+  padding-left: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*Search Menu*/
+.ui-autocomplete {
+        max-height: 60%;
+        overflow-y: auto;
+        /* prevent horizontal scrollbar */
+        overflow-x: hidden;
+}
+
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+}
+
+/*Scrollbar Search Menu*/
+.ui-autocomplete::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.ui-autocomplete::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.ui-autocomplete::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(105, 0, 199)),
+                                       color-stop(0.86, rgb(78, 115, 223)));
+}
+
+/*Scrollbar history*/
+.scroll-history{
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  height: 450px !important;
+}
+
+.scroll-history::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scroll-history::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+.scroll-history::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(105, 0, 199)),
+                                       color-stop(0.86, rgb(78, 115, 223)));
+}
+
+.unclicked {
+  background-color: #e6edfc;
+}
+
+.unclicked:hover{
+  background-color: #e1e9fc;
+}
+
+.unclicked span{
+  color: #4e73df;
+}
+
+/*Button Show History*/
+.btn-all-history{
+  color: #4e73df;
+  transition: .5s ease-in-out;
+}
+
+.btn-all-history:hover{
+  color: white;
+  background-color: #4e73df;
+  transform: scale(1.1,1.1);
+}
+
+.profile-pic{
+  border-radius: 25px;
+}

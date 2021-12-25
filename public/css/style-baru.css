@@ -1,0 +1,139 @@
+
+.lay {
+  height: 200px;
+  width: 250px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding-right: 50px;
+}
+
+.image {
+  border-radius: 5px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.text {
+  background-color: #002F59;
+  color: white;
+  font-size: 12px;
+  width: 255px;
+  height: 50px;
+  margin-top: 120px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+}
+.batas{
+  height: 4px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  background-color: #CE9C3C; 
+}
+
+.judul_bk{
+  font-size: 30px;
+  color:#002F59;
+  text-align: center;
+  margin-top: 30px;
+}
+.table-style {
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.thstyle, .tdstyle {
+  text-align: left;
+  padding: 8px;
+}
+
+
+.thstyle {
+  background-color: #002F59;
+  opacity: 0.8;
+  color: white;
+}
+.select-css {
+  display: block;
+  font-size: 16px;
+  color: #002F59;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
+  width: 200px;
+  box-sizing: border-box;
+  margin-left: 380px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css:hover {
+
+}
+.select-css:focus {
+  outline: none;
+}
+.select-css option {
+  font-weight:normal;
+}
+.button {
+  position: relative;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 30px;
+  padding: auto;
+  width: 200px;
+  height: 50px;
+  margin-left: 650px;
+  margin-right: auto;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #343a40;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
